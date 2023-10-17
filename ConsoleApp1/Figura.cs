@@ -16,7 +16,7 @@ namespace ConsoleApp1
         public void info()
         {
             Console.WriteLine("Введите сторону фигуры.");
-            a = Convert.ToInt32(Console.ReadLine());
+            a = float.Parse(Console.ReadLine());
         }
         public float perimeter()
         {
@@ -40,8 +40,8 @@ namespace ConsoleApp1
         public void info()
         {
             Console.WriteLine("Введите сторону фигуры.");
-            a = Convert.ToInt32(Console.ReadLine());
-            b = Convert.ToInt32(Console.ReadLine());
+            a = float.Parse(Console.ReadLine());
+            b = float.Parse(Console.ReadLine());
         }
         public float perimeter()
         {
@@ -68,9 +68,9 @@ namespace ConsoleApp1
         public void info()
         {
             Console.WriteLine("Введите сторону фигуры.");
-            a = Convert.ToInt32(Console.ReadLine());
-            b = Convert.ToInt32(Console.ReadLine());
-            c = Convert.ToInt32(Console.ReadLine());
+            a = float.Parse(Console.ReadLine());
+            b = float.Parse(Console.ReadLine());
+            c = float.Parse(Console.ReadLine());
         }
 
         public bool prov()
@@ -111,7 +111,7 @@ namespace ConsoleApp1
         public float P;
         public void info()
         {
-            r = Convert.ToInt32(Console.ReadLine());
+            r = float.Parse(Console.ReadLine());
         }
         public float square()
         {

@@ -12,58 +12,49 @@ namespace ConsoleApp1
         {
             while (true)
             {
-                int var = 0;
-                triangle tri = new triangle();
-                circle cir = new circle();
-                rectangle rec = new rectangle();
-                square squ = new square();
-                Console.WriteLine("1 - квадрат, 2 - прямоугольник, 3 - круг, 4 - тругольник.");
+                int var;
+                triangle1 tri = new triangle1();
+                circle1 cir = new circle1();
+                rectangle1 rec = new rectangle1();
+                square1 squ = new square1();
+                pyramid pyr = new pyramid();
+                Console.WriteLine("1 - квадрат, 2 - прямоугольник, 3 - круг, 4 - тругольник, 5 - пирамида.");
                 var = Convert.ToInt32(Console.ReadLine());
                 Console.Clear();
                 if (var == 1)
                 {
                     Console.WriteLine("Квадрат");
-                    squ = new square();
+                    squ = new square1();
                     squ.info();
-                    squ.perimeter();
-                    squ.Square();
+                    squ.out_info();
                 }
                 else if (var == 2)
                 {
                     Console.WriteLine("Прямоугольник");
-                    rec = new rectangle();
+                    rec = new rectangle1();
                     rec.info();
-                    rec.perimeter();
-                    rec.square();
+                    rec.out_info();
                 }
                 else if (var == 3)
                 {
                     Console.WriteLine("Круг");
-                    cir = new circle();
+                    cir = new circle1();
                     cir.info();
-                    cir.perimeter();
-                    cir.square();
+                    cir.out_info();
                 }
                 else if (var == 4)
                 {
                     Console.WriteLine("Треугольник");
-                    tri = new triangle();
+                    tri = new triangle1();
                     tri.info();
-                    tri.prov();
-                    if (tri.prov() == false)
-                    {
-                        Console.WriteLine("Такого треугольника не существует.");
-                    }
-                    else
-                    {
-                        tri.half_meter();
-                        tri.perimeter();
-                        tri.square();
-                    }
+                    tri.vivod();
                 }
-                else
+                else if (var == 5)
                 {
-                    Console.WriteLine("Вы ввели не то число.");
+                    Console.WriteLine("Пирамида");
+                    pyr = new pyramid();
+                    pyr.info();
+                    pyr.out_info();
                 }
             }
         }

@@ -61,7 +61,7 @@ namespace ConsoleApp1
             }
             else if (n == 4)
             {
-                V = (float)(1 / 3) * (float)(h * Math.Pow(a, 2));
+                V = (float)(h * Math.Pow(a, 2)/3);
                 return V;
             }
             else if (n == 6)

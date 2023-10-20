@@ -20,7 +20,7 @@ namespace ConsoleApp1
         private float V;
         private float result;
         private bool pov;
-       
+
         public void info()
         {
             Console.WriteLine("Введите высоту пирамиды.");
@@ -42,7 +42,7 @@ namespace ConsoleApp1
         }
         private bool prov()
         {
-            if ((n > 2 && h > 0 && a > 0) || (r>0 && h>0))
+            if ((n > 2 && h > 0 && a > 0) || (r > 0 && h > 0))
             {
                 pov = true;
                 return pov;
@@ -70,7 +70,7 @@ namespace ConsoleApp1
                 return V;
             }
             else
-            {                                
+            {
                 V = (float)(n * h * Math.Pow(a, 2)) / (float)(12 * Math.Tan(Math.PI / n));
                 return V;
             }
@@ -82,23 +82,28 @@ namespace ConsoleApp1
         }
         private float square()
         {
-            S = (float)((a * A() * n) / 2) + (float)((a * n * Math.Sqrt(Math.Pow(h, 2) + Math.Pow(A(), 2)))/2);
+            S = (float)((a * A() * n) / 2) + (float)((a * n * Math.Sqrt(Math.Pow(h, 2) + Math.Pow(A(), 2))) / 2);
             return S;
         }
-        private float perimeter() 
+        private float perimeter()
         {
             P = (a * n) + ((float)(Math.Sqrt(Math.Pow(h, 2) + Math.Pow(A(), 2))) * n);
             return P;
         }
         private float vich2()
         {
-            V = (float)(Math.PI*Math.Pow(r, 2)*h)/3;
+            V = (float)(Math.PI * Math.Pow(r, 2) * h) / 3;
             return V;
         }
         private float square2()
         {
             S = (float)Math.PI * r * (float)Math.Sqrt(Math.Pow(h, 2) + Math.Pow(r, 2)) + (float)Math.PI * (float)Math.Pow(r, 2);
             return S;
+        }
+        private float perimeter2()
+        {
+            P = (float)(Math.PI * 2 * r);
+            return P;
         }
         public void out_info()
         {
@@ -112,6 +117,7 @@ namespace ConsoleApp1
                 }
                 else if (change == 1)
                 {
+                    Console.WriteLine("Периметр пирамидки: " + perimeter2());
                     Console.WriteLine("Площадь пирамидки: " + square2());
                     Console.WriteLine("Объем пирамиды равен: " + vich2());
                 }

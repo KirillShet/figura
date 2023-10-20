@@ -25,13 +25,13 @@ namespace ConsoleApp1
             c = float.Parse(Console.ReadLine());
             if (a > b)
             {
-                if (a>c)
-                { x = a; a = c; c = x;}
+                if (a > c)
+                { x = a; a = c; c = x; }
             }
             else if (b > a)
             {
                 if (b > c)
-                { x = b; b = c; c = x;}
+                { x = b; b = c; c = x; }
             }
         }
         private bool prov()
@@ -90,7 +90,7 @@ namespace ConsoleApp1
         {
             S = (float)Math.Sqrt(perimeter() / 2 * (perimeter() / 2 - a) * (perimeter() / 2 - b) * (perimeter() / 2 - c));
             Console.WriteLine("Периметр фигуры: " + P);
-            Console.WriteLine("Площадь фигуры: " + S);           
+            Console.WriteLine("Площадь фигуры: " + S);
             return S;
         }
     }

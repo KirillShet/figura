@@ -26,13 +26,13 @@ namespace ConsoleApp1
         }
         private float square()
         {
-                S = (float)Math.PI * (float)Math.Pow(r, 2);
-                return S;
+            S = (float)Math.PI * (float)Math.Pow(r, 2);
+            return S;
         }
         private float perimeter()
         {
-                P = 2 * (float)Math.PI * r;
-                return P;
+            P = 2 * (float)Math.PI * r;
+            return P;
         }
         public void out_info()
         {

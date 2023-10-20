@@ -32,18 +32,18 @@ namespace ConsoleApp1
         }
         private float perimeter()
         {
-                P = (a + b) * 2;
-                return P;
+            P = (a + b) * 2;
+            return P;
         }
         private float square()
         {
-                S = a * b;
-                return S;
+            S = a * b;
+            return S;
         }
         public void out_info()
         {
             if (prov() == true)
-            { 
+            {
                 Console.WriteLine("Периметр фигуры: " + perimeter());
                 Console.WriteLine("Площадь фигуры: " + square());
             }

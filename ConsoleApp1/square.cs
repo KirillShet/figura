@@ -17,7 +17,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Введите сторону фигуры.");
             a = float.Parse(Console.ReadLine());
-           
+
         }
         private bool prov()
         {
@@ -32,13 +32,13 @@ namespace ConsoleApp1
         }
         private float perimeter()
         {
-                P = a * 4;                
-                return P;
+            P = a * 4;
+            return P;
         }
         private float Square()
         {
-                S = (float)Math.Pow(a, 2);
-                return S;
+            S = (float)Math.Pow(a, 2);
+            return S;
         }
         public void out_info()
         {
